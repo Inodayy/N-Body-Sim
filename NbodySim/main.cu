@@ -18,7 +18,7 @@ void initParticles(Particle* p, int n) {
         p[i].pos.y = rand() / (float)RAND_MAX * 2.0f - 1.0f;
         p[i].vel.x = (rand() / (float)RAND_MAX * 2.0f - 1.0f) * 0.01f; // Small random velocity
         p[i].vel.y = (rand() / (float)RAND_MAX * 2.0f - 1.0f) * 0.01f; // Small random velocity
-        p[i].size = 0.1f;
+        //p[i].size = 0.1f;
     }
 }
 
@@ -50,7 +50,7 @@ void updateAndRender() {
     glEnableVertexAttribArray(1);
 
     // Set the point size directly here
-    glPointSize(5.0f); // Example: Set a larger point size for all particles
+    //glPointSize(5.0f); // Example: Set a larger point size for all particles
 
     // Render particles
     glDrawArrays(GL_POINTS, 0, numParticles);
